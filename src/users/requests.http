@@ -1,0 +1,17 @@
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email":"asdf@asdf.com",
+    "password":"thesys23.@"
+}
+
+### Find a particular user with a given ID
+
+GET http://localhost:3000/auth/1
+
+### Delete a user
+DELETE http://localhost:3000/auth/1
+
+### Update a user
+PATCH http://localhost:3000/auth/
