@@ -2,8 +2,9 @@ import {AfterUpdate,AfterRemove,Entity, Column, PrimaryGeneratedColumn, AfterIns
 
 @Entity()
 export class User{
-    @PrimaryGeneratedColumn('uuid')
+    @PrimaryGeneratedColumn()
     id:number;
+
 
     @Column()
     email:string;
