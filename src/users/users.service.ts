@@ -13,7 +13,10 @@ export class UsersService {
   }
 
   findOne(id:any) {
-    const userIds = [id]; // Wrap the id in an array
+    const userIds = [id];
+    if(!userIds){
+      return null;
+    } // Wrap the id in an array
     return this.repo.findByIds(userIds)
       .then(users => (users.length > 0 ? users[0] : null)); // Return the first user or null if not found
   }
