@@ -20,7 +20,6 @@ interface ClassConstructor{
 export function Serialize(dto:ClassConstructor){
   return UseInterceptors(new SerializerInterceptor(dto))
 }
-
 export class SerializerInterceptor implements NestInterceptor{
   constructor(private dto: any){}
   intercept(context: ExecutionContext, next: CallHandler): Observable<any> {

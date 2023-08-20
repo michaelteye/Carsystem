@@ -20,6 +20,9 @@ Content-Type: application/json
 ### Get currentUser
 GET http://localhost:3000/auth/currentUser
 
+### get currentUser1
+GET http://localhost:3000/auth/who
+
 ###SignOut User
 POST http://localhost:3000/auth/signout
 
